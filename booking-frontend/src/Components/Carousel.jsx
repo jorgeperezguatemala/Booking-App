@@ -1,15 +1,31 @@
 import { Link } from "react-router-dom"
+import { Modal } from "./modal"
+import { useState } from "react"
 
 const Carousel = () => {
+
+    const [isModalOpen, setIsModalOpen] = useState(false);
+
+    const openModal = () => {
+        setIsModalOpen(true);
+    };
+
+    const closeModal = () => {
+        setIsModalOpen(false);
+    };
+
   return (
     <>
         <div className="flex px-5 py-10">
         <div className=" justify-around w-1/2">
             <h3 className="font-sans text-3xl uppercase">Know about our</h3>
             <h1 className="font-sans text-7xl font-bold	">Rooms</h1>
-            <Link to="">
-                <button type='submit' className='bg-black text-white hover:bg-zinc-900 hover:text-white font-bold py-3 px-5 rounded'>BOOK NOW</button>
-            </Link>
+    
+                <button type='submit' className='bg-black text-white hover:bg-zinc-900 hover:text-white font-bold py-3 px-5 rounded' onClick={openModal}>BOOK NOW</button>
+                {isModalOpen && (
+                    <Modal isOpen={isModalOpen} onClose={closeModal}></Modal>
+                )}
+
         </div>
         <div class="w-1/2">
         <div id="carouselExampleCaptions" className="carousel slide">

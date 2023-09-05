@@ -1,6 +1,20 @@
 import { Link } from "react-router-dom"
+import { Modal } from "./modal"
+import { useState } from "react"
 
 const NavBar = () => {
+
+    const [isModalOpen, setIsModalOpen] = useState(false);
+
+    const openModal = () => {
+        setIsModalOpen(true);
+    };
+
+    const closeModal = () => {
+        setIsModalOpen(false);
+    };
+
+
   return (
     <>
     <div className="container">
@@ -32,9 +46,10 @@ const NavBar = () => {
                         <Link to="/" className='text-black hover:text-yellow-500 px-4' >ABOUT US</Link>
                     </li>
                 </ul>
-                <Link to="/">
-                    <button type='submit' className='bg-black text-white hover:bg-zinc-900 hover:text-white font-bold py-3 px-5 rounded animate-bounce'>BOOK NOW</button>
-                </Link>
+                    <button type='submit' className='bg-black text-white hover:bg-zinc-900 hover:text-white font-bold py-3 px-5 rounded animate-bounce' onClick={openModal}>BOOK NOW</button>
+                    {isModalOpen && (
+                    <Modal isOpen={isModalOpen} onClose={closeModal}></Modal>
+                    )}
             </div>
         </nav>
 
