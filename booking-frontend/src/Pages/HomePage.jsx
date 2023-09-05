@@ -1,4 +1,6 @@
 import Banner from "../Components/Banner"
+import Carousel from "../Components/Carousel"
+import Greeting from "../Components/Greeting"
 import NavBar from "../Components/NavBar"
 
 const HomePage = () => {
@@ -6,6 +8,8 @@ const HomePage = () => {
     <>
     <NavBar />
     <Banner />
+    <Greeting />
+    <Carousel />
 
 
     </>

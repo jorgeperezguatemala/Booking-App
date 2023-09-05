@@ -17,7 +17,7 @@ const NavBar = () => {
 
         <nav className='w-full bg-white text-white text-center relative'>
             <div className='flex justify-between items-center px-4 py-4'>
-                <img src="/booking-frontend/src/Imagenes/Logo.png" alt="Logo" />
+                <img src="/public/Resources/Logo.png" alt="Logo" />
                 <ul className='flex'>
                     <li>
                         <Link to="/" className='text-black hover:text-yellow-500 px-4' >HOME</Link>
