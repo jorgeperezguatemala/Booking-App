@@ -26,7 +26,7 @@ const NavBar = () => {
                 <p className='px-2 bg-black' ><i class="fa-solid fa-phone bg-black"></i> +503 9876 1234</p>
                 <p className='px-2 bg-black' ><i class="fa-solid fa-envelope bg-black"></i> info@surfsivarlodge.com</p>
             </div>
-            <Link className='uppercase bg-black' to="/SingIn">Sing in</Link>
+            <Link className='uppercase bg-black' to="/singin">Sing in</Link>
         </div>
 
         <nav className='w-full bg-white text-white text-center relative'>
@@ -40,7 +40,7 @@ const NavBar = () => {
                         <Link to="/" className='text-black hover:text-yellow-500 px-4 uppercase' >surf trips</Link>
                     </li>
                     <li>
-                        <Link to="/MyBookings" className='text-black hover:text-yellow-500 px-4 uppercase' >My bookings</Link>
+                        <Link to="/mybookings" className='text-black hover:text-yellow-500 px-4 uppercase' >My bookings</Link>
                     </li>
                     <li>
                         <Link to="/" className='text-black hover:text-yellow-500 px-4 uppercase' >ABOUT US</Link>
