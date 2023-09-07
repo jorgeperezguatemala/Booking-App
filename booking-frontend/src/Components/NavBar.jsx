@@ -17,7 +17,8 @@ const NavBar = () => {
 
         <nav className='w-full bg-white text-white text-center relative'>
             <div className='flex justify-between items-center px-4 py-4'>
-                <img src="/public/Resources/Logo.png" alt="Logo" />
+                
+                <Link to="/" className='text-black hover:text-yellow-500 px-4 uppercase' ><img src="/public/Resources/Logo.png" alt="Logo" /></Link>
                 <ul className='flex'>
                     <li>
                         <Link to="/" className='text-black hover:text-yellow-500 px-4 uppercase' >HOME</Link>
