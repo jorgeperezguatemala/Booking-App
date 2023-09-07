@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom"
-import { Modal } from "./modal"
+//import { Modal } from "./modal"
 import { useState } from "react"
 
 const Carousel = () => {
@@ -10,12 +10,12 @@ const Carousel = () => {
           <div className=" justify-around w-1/2">
             <h3 className="font-sans text-3xl uppercase">Know about our</h3>
             <h1 className="font-sans text-7xl font-bold	">Rooms</h1>
-    
+                <Link to='/booknow'>
                 <button type='submit' className='bg-black text-white hover:bg-zinc-900 hover:text-white font-bold py-3 px-5 rounded'>BOOK NOW</button>
-                
+                </Link>
         </div>
 
-        <div class="w-1/2">
+        <div className="w-1/2">
           <div id="carouselExampleCaptions" className="carousel slide">
             <div className="carousel-indicators">
               <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>

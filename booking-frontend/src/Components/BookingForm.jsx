@@ -1,8 +1,10 @@
 import 'react-datepicker/dist/react-datepicker.css';
 
+import React, { useState } from 'react';
+
 const BookingForm = () => {
+
   return (
-    <>
 
     <div className="max-w-md mx-auto bg-gray-40 rounded-xl shadow-md overflow-hidden md:max-w-2xl justify-center items-center">
       <div className="md:flex">
@@ -30,7 +32,6 @@ const BookingForm = () => {
       </div>
     </div>
 
-    </>
   )
 }
 
