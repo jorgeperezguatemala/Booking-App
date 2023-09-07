@@ -6,7 +6,7 @@ const BookingPage = () => {
 
       <main className="container mx-auto mt-8">
 
-        <section className="bg-white rounded-lg shadow-md p-6">
+        <section className="bg-white rounded-lg shadow-md p-8">
             <h2 className="text-2xl font-semibold mb-4 flex items-center justify-center h-full" style={{color: 'black'}}>Make a reservation</h2>
             <form>
                 <div className="grid grid-cols-2 gap-4">

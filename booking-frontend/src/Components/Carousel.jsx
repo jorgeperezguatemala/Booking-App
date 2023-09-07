@@ -4,39 +4,27 @@ import { useState } from "react"
 
 const Carousel = () => {
 
-    const [isModalOpen, setIsModalOpen] = useState(false);
-
-    const openModal = () => {
-        setIsModalOpen(true);
-    };
-
-    const closeModal = () => {
-        setIsModalOpen(false);
-    };
-
   return (
     <>
         <div className="flex px-5 py-10">
-        <div className=" justify-around w-1/2">
+          <div className=" justify-around w-1/2">
             <h3 className="font-sans text-3xl uppercase">Know about our</h3>
             <h1 className="font-sans text-7xl font-bold	">Rooms</h1>
     
-                <button type='submit' className='bg-black text-white hover:bg-zinc-900 hover:text-white font-bold py-3 px-5 rounded' onClick={openModal}>BOOK NOW</button>
-                {isModalOpen && (
-                    <Modal isOpen={isModalOpen} onClose={closeModal}></Modal>
-                )}
-
+                <button type='submit' className='bg-black text-white hover:bg-zinc-900 hover:text-white font-bold py-3 px-5 rounded'>BOOK NOW</button>
+                
         </div>
+
         <div class="w-1/2">
-        <div id="carouselExampleCaptions" className="carousel slide">
-        <div className="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
-        </div>
-        <div className="carousel-inner w-100">
+          <div id="carouselExampleCaptions" className="carousel slide">
+            <div className="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            </div>
 
+        <div className="carousel-inner w-100">
           <div className="carousel-item active">
             <img src="/public/Resources/Rooms/Suite King size.jpg" className="d-block w-100" alt="..." />
             <div className="carousel-caption d-none d-md-block">
@@ -74,7 +62,7 @@ const Carousel = () => {
           <span className="carousel-control-next-icon" aria-hidden="true"></span>
           <span className="visually-hidden">Next</span>
         </button>
-      </div>
+          </div>
         </div>
     </div>
 
