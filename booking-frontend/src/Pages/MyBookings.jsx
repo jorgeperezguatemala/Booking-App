@@ -4,7 +4,7 @@ import Carousel from "../Components/Carousel";
 import { useEffect, useState } from "react";
 const API_URL = "http://localhost:8000/api";
 
-export default function MyBookings() {
+const MyBookings = () => {
   const [bookings, setBookings] = useState([]);
   const [guests, setGuests] = useState([]);
   const [rooms, setRooms] = useState([]);
@@ -110,4 +110,6 @@ export default function MyBookings() {
       <Footer />
     </>
   );
-}
+};
+
+export default MyBookings;
