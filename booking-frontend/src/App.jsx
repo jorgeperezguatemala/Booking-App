@@ -7,6 +7,8 @@ import MyBookings from './Pages/MyBookings'
 import BookNow from './Pages/BookNow'
 import AboutUsPage from './Pages/AboutUsPage'
 import SurfTripsPages from './Pages/SurfTripsPages'
+import Guests from './Pages/Guests'
+import Rooms from './Pages/Rooms'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -21,6 +23,8 @@ function App() {
           <Route path='/booknow' element={<BookNow/>}></Route>
           <Route path='/aboutus' element={<AboutUsPage/>}></Route>
           <Route path='/surftrips' element={<SurfTripsPages/>}></Route>
+          <Route path='/guests' element={<Guests/>}></Route>
+          <Route path='/rooms' element={<Rooms/>}></Route>
         </Routes>
       </BrowserRouter>
     </>

@@ -31,6 +31,12 @@ const NavBar = () => {
                     <li>
                         <Link to="/aboutus" className='text-black hover:text-yellow-500 px-4 uppercase' >ABOUT US</Link>
                     </li>
+                    <li>
+                        <Link to="/guests" className='text-black hover:text-yellow-500 px-4 uppercase' >Add a guest</Link>
+                    </li>
+                    <li>
+                        <Link to="/rooms" className='text-black hover:text-yellow-500 px-4 uppercase' >Add a room</Link>
+                    </li>
                 </ul>
                 <Link to="/booknow">
                 <button type='submit' className='bg-black text-white hover:bg-zinc-900 hover:text-white font-bold py-3 px-5 rounded animate-bounce'>BOOK NOW</button>
