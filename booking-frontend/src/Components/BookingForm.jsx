@@ -1,6 +1,5 @@
-import 'react-datepicker/dist/react-datepicker.css';
-
-import React, { useState } from 'react';
+import React from 'react'
+import Amenities from './Amenities'
 
 const BookingForm = () => {
 
@@ -54,6 +53,8 @@ const BookingForm = () => {
   };
 
   return (
+    <>
+      <div className='container bg-gray-200 rounded-xl'>
 
     <div className="max-w-md mx-auto bg-gray-40 rounded-xl shadow-md overflow-hidden md:max-w-2xl justify-center items-center">
       <div className="md:flex">
@@ -148,10 +149,12 @@ const BookingForm = () => {
     </div>
     </div>
     </div>
+    </div>
+    </>
   );
 };
 
-//     <div className="max-w-md mx-auto bg-gray-40 rounded-xl shadow-md overflow-hidden md:max-w-2xl justify-center items-center">
+{/* //     <div className="max-w-md mx-auto bg-gray-40 rounded-xl shadow-md overflow-hidden md:max-w-2xl justify-center items-center">
 //       <div className="md:flex">
 //         <div className='p-8 w-full'>
 //           <div className="uppercase tracking-wide text-xl font-semibold mb-1 text-center text-black">
@@ -178,6 +181,6 @@ const BookingForm = () => {
 //     </div>
 
 //   )
-// }
+// } */}
 
 export default BookingForm
