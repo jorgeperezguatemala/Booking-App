@@ -1,5 +1,5 @@
-import React from 'react'
-import Amenities from './Amenities'
+import 'react-datepicker/dist/react-datepicker.css';
+import react, {useState} from 'react'
 
 const BookingForm = () => {
 
