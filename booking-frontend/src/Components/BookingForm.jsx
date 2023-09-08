@@ -2,18 +2,28 @@ import React from 'react'
 import Amenities from './Amenities'
 
 const BookingForm = () => {
+
+const handleSubmit = (event) =>{
+    event.preventDefault()
+
+const formData = new FormData(event.target)
+const name = FormData.get('Check_in')
+console.log(name);
+
+}
+
   return (
     <>
       <div className='container bg-gray-200 rounded-xl'>
 
         <div className='flex'><Amenities /></div>
         
-        <form action="/booknowconfirm" className='pt-5'>
+        <form onSubmit={handleSubmit} className='pt-5'>
           <div className='flex justify-center items-center bg-black rounded-2 text-white'>
             <label htmlFor="">Check in</label>
-            <input placeholder='Check in' type="date" name="Check in" id="" className='shadow appearance-none border rounded m-3 py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline'/>
+            <input placeholder='Check in' type="date" name="Check_in" id="" className='shadow appearance-none border rounded m-3 py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline'/>
             <label htmlFor="">Check out</label>
-            <input placeholder='' type="date" name="" id="" className='shadow appearance-none border rounded m-3 py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline'/>
+            <input placeholder='' type="date" name="Check_out" id="" className='shadow appearance-none border rounded m-3 py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline'/>
           </div>
 
         <div name='Cards' className='flex justify-center items-center rounded-2 text-black pt-2 pb-2 justify-content-between px-1'>
@@ -25,14 +35,14 @@ const BookingForm = () => {
 		        <p className="text-gray-500">Description</p>
 	          </div>
 	          <div className="p-2 flex justify-content-between">
-		        <button type="submit" className="bg-black w-full text-white item-aling-center rounded-3 p-1">Book</button>
+		        <button type="submit"  name='Type_of_room'className="bg-black w-full text-white item-aling-center rounded-3 p-1">Book</button>
 	          </div>
           </div>
 
         </div>
 
 
-
+        <button type="submit"  name='Type_of_room'className="bg-black w-full text-white item-aling-center rounded-3 p-1">Book</button>
 
       </form>
       
