@@ -40,7 +40,7 @@ const Carousel = () => {
           </div>
 
           <div className="carousel-item">
-            <img src="/public/Resources/Rooms/Single Room.jpg" className="d-block w-100" alt="..." />
+            <img src="../../public/Resources/Rooms/Single Room.jpg" className="d-block w-100" alt="..." />
             <div className="carousel-caption d-none d-md-block">
               <h5 className='uppercase text-5xl'>Single Room</h5>
             </div>

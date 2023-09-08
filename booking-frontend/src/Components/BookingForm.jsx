@@ -1,47 +1,49 @@
-import 'react-datepicker/dist/react-datepicker.css';
-
-import React, { useState } from 'react';
+import React from 'react'
+import Amenities from './Amenities'
 
 const BookingForm = () => {
-
   return (
+    <>
+      <div className='container bg-gray-200 rounded-xl'>
 
-    <div className="max-w-md mx-auto bg-gray-100 rounded-xl shadow-md overflow-hidden md:max-w-2xl justify-center items-center">
-      <div className="md:flex">
-        <div className='w-full'>
-          <div className="uppercase tracking-wide text-xl font-semibold mb-1 text-center text-black">
-            Make a new booking
+        <div className='flex'><Amenities /></div>
+        
+        <form action="/booknowconfirm" className='pt-5'>
+          <div className='flex justify-center items-center bg-black rounded-2 text-white'>
+            <label htmlFor="">Check in</label>
+            <input placeholder='Check in' type="date" name="Check in" id="" className='shadow appearance-none border rounded m-3 py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline'/>
+            <label htmlFor="">Check out</label>
+            <input placeholder='' type="date" name="" id="" className='shadow appearance-none border rounded m-3 py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline'/>
           </div>
-          <form action="/booknowconfirm">
-            <div className='flex justify-content-between justify-center items-center'>
-              <label htmlFor="">Check in</label>
-              <input placeholder='' type="date" name="Check in" id="" className='shadow appearance-none border rounded m-3 py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline'/>
-              <label htmlFor="">Check out</label>
-              <input placeholder='' type="date" name="" id="" className='shadow appearance-none border rounded m-3 py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline'/>
-            </div>
 
-            <div className='flex justify-content-between justify-center items-center'>
-              <input placeholder='Number of guests' type="number" name="" id="" className='shadow appearance-none border rounded w-full m-3 py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline'/>
-                <select placeholder='Type of room'name="Type of room" id="" className='shadow appearance-none border rounded w-full m-3 py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline'>
-                  <option value="" disabled selected>Type of room</option>
-                  <option value="opcion1">Suite 1 King Size bed</option>
-                  <option value="opcion2">Double 2 Queen beds</option>
-                  <option value="opcion3">Single Room</option>
-                  <option value="opcion4">Family Room</option>
-                </select>
-                <select placeholder='Breakfast'name="Type of room" id="" className='shadow appearance-none border rounded w-full m-3 py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline'>
-                  <option value="" disabled selected>Breakfast</option>
-                  <option value="opcion1">Breakfast included</option>
-                  <option value="opcion2">Breakfast not included</option>
-                </select>
-            </div>
-            <button type="submit" className='bg-black text-white font-bold py-1 px-5 my-5 rounded w-full'>Search</button>
-          </form>
-          <img src="https://images.unsplash.com/photo-1505459668311-8dfac7952bf0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="" />
+        <div name='Cards' className='flex justify-center items-center rounded-2 text-black pt-2 pb-2 justify-content-between px-1'>
+         
+          <div className="bg-white shadow-lg rounded-3">
+	          <img src="../../public/Resources/Rooms/Suite King size.jpg" alt="" className='w-full h-48 object-cover rounded-2'/>
+	          <div className="p-4">
+		        <h5 className="text-2xl font-semibold">Suit King Bed</h5>
+		        <p className="text-gray-500">Description</p>
+	          </div>
+	          <div className="p-2 flex justify-content-between">
+		        <button type="submit" className="bg-black w-full text-white item-aling-center rounded-3 p-1">Book</button>
+	          </div>
+          </div>
+
         </div>
-      </div>
-    </div>
 
+
+
+
+      </form>
+      
+
+      
+
+
+
+        
+      </div>
+    </>
   )
 }
 
