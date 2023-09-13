@@ -25,7 +25,7 @@ const BookingForm = () => {
 
     try {
 
-          // Obtener el estado actual de la habitación desde tu base de datos
+          // Obtener el estado actual de la habitación desde la base de datos
     const roomResponse = await fetch(`http://localhost:8000/api/rooms/${formData.room_id}`, {
       method: 'PUT'
     });
